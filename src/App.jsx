@@ -5,6 +5,8 @@ import Navbar from './components/Navbar'
 import LogoMarquee from './sections/LogoMarqueeSection'
 import FeatureCards from './sections/FeatureCards'
 import ExperienceSection from './sections/ExperienceSection'
+import Techstack from './sections/Techstack'
+import Testimonials from './sections/Testimonials'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <LogoMarquee />
       <FeatureCards />
       <ExperienceSection />
+      <Techstack />
+      <Testimonials />
     </>
   )
 }
