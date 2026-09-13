@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleHeader from '../components/TitleHeader'
 import { testimonials } from '../constants'
-import Glowcard from '../components/Glowcard'
+import Glowcard from '../components/GlowCard'
 
 const Testimonials = () => {
   return (
