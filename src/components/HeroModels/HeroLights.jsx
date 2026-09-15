@@ -1,10 +1,32 @@
+import { useMemo } from 'react';
 import * as THREE from 'three';
 
-const HeroLights = () => {
+const HeroLights = ({ simplified = false }) => {
+    const rectLight = useMemo(() => {
+        const light = new THREE.RectAreaLight('#A259FF', 15, 3, 2);
+        light.position.set(1, 3, 4);
+        light.rotation.set(-Math.PI / 4, Math.PI / 4, 0);
+        return light;
+    }, []);
+
+    if (simplified) {
+        return (
+            <>
+                <ambientLight intensity={0.35} color="#1a1a40" />
+                <spotLight
+                    position={[2, 5, 6]}
+                    intensity={80}
+                    angle={0.3}
+                    penumbra={1}
+                    color="white"
+                />
+                <pointLight position={[0, 1, 0]} intensity={8} color="#7209b7" />
+            </>
+        )
+    }
+
     return (
         <>
-            {/* <ambientLight intensity={0.2} color="#1a1a40" />
-            <directionalLight position={[5,5,5]} intensity={2} /> */}
             <spotLight 
                 position={[2,5,6]}
                 intensity={100}
@@ -29,12 +51,7 @@ const HeroLights = () => {
                 color="#9d4edd"
             />
 
-            <primitive 
-                object={new THREE.RectAreaLight('#A259FF', 8, 3, 2)}
-                position={[1,3,4]}
-                intensity={15}
-                rotation={[-Math.PI/4, Math.PI/4, 0]}
-            />
+            <primitive object={rectLight} />
 
             <pointLight 
                 position={[0,1,0]}
