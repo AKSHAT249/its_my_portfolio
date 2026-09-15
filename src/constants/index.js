@@ -149,10 +149,10 @@ const navLinks = [
     {
       review:
         "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-      imgPath: "/images/exp1.png",
+      imgPath: "/images/MorphemeWebnexus.png",
       logoPath: "/images/logo1.png",
-      title: "Frontend Developer",
-      date: "January 2023 - Present",
+      title: "Software Engineer",
+      date: "May 2025 - Present",
       responsibilities: [
         "Developed and maintained user-facing features for the Hostinger website.",
         "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
