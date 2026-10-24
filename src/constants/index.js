@@ -29,10 +29,10 @@ const navLinks = [
   ];
   
   const counterItems = [
-    { value: 15, suffix: "+", label: "Years of Experience" },
-    { value: 200, suffix: "+", label: "Satisfied Clients" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
-    { value: 90, suffix: "%", label: "Client Retention Rate" },
+    { value: 2, suffix: "+", label: "Years of Hands-On Development" },
+    { value: 3, suffix: "+", label: "Projects Built" },
+    { value: 600, suffix: "+", label: "Problems Solved Across" },
+    { value: 5, suffix: "yrs", label: "Competetive Programming" },
   ];
   
   const logoIconsList = [

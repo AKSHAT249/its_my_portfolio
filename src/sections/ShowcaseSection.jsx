@@ -52,36 +52,40 @@ const ShowcaseSection = () => {
                 {/* LEFT */}
                 <div ref={project1Ref} className="first-project-wrapper">
                     <div className="image-wrapper">
-                        <img src="/images/project1.png" alt="Ryde" />
+                        <img src="/images/priya_mehra_heroImage.png" alt="Dr. Priya Mehra, an experienced gynecologist" />
                     </div>
                     <div className="text-content">
-                        <h2>On Demand Rides Made With a powerful, User friendly App called Ryde</h2>
+                        <h2>Expert Women's Healthcare, Just a Call Away</h2>
                     </div>
                     <p className="text-white-50 md:text-xl">
-                        Ryde is a platform that allows users to book rides from one location to another.
+                        Connect with Dr. Priya Mehra, an experienced gynecologist, 
+                        to book appointments or schedule a consultation before visiting the clinic. 
+                        Get trusted guidance, convenient access to care, and peace of mind when you need it most.
                     </p>
+
+
 
                 </div>
 
                 {/* RIGHT */}
                 <div className="project-list-wrapper overflow-hidden">
                     <div ref={project2Ref} className="project">
-                        <div className="image-wrapper bg-[#ffefdb]">
-                            <img src="/images/project2.png" alt="Library Management Platform" />
+                        <div className="image-wrapper bg-[#EDE9FE]">
+                            <img src="/images/daily_tracker_dashboard.png" alt="Daily Activity & Productivity Tracker" />
                         </div>
-                        <h2>Library Management Platform</h2>
+                        <h2>Daily Activity & Productivity Tracker</h2>
                         <p className="text-white-50 md:text-xl">
-                            A platform that allows users to manage their library.
+                            Track daily tasks, monitor progress, build habits, and save memorable moments.
                         </p>
                     </div>
 
                     <div ref={project3Ref} className="project">
                         <div className="image-wrapper bg-[#ffe7eb]">
-                            <img src="/images/project3.png" alt="YC Directory" />
+                            <img src="/images/bolly_movie_guess.png" alt="YC Directory" />
                         </div>
-                        <h2>YC Directory-A Startup Showcase App</h2>
+                        <h2>Bollywood Movie Guess</h2>
                         <p className="text-white-50 md:text-xl">
-                            A platform that allows users to showcase their startups.
+                            An interactive Bollywood movie guessing game that challenges players to identify films using vowel and letter clues.
                         </p>
                     </div>
 
