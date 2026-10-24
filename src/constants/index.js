@@ -144,6 +144,54 @@ const navLinks = [
       rotation: [0, -Math.PI / 4, 0],
     },
   ];
+
+  const techStackSkills = [
+    {
+      title: "Languages",
+      items: ["JavaScript (ES6+)", "Python", "TypeScript", "SQL", "HTML5", "CSS3"],
+    },
+    {
+      title: "Frontend",
+      items: [
+        "React.js",
+        "Next.js",
+        "Redux Toolkit",
+        "Material-UI (MUI)",
+        "Ant Design",
+        "Recharts",
+        "Cross-Platform Optimization (Web / iPad)",
+      ],
+    },
+    {
+      title: "Backend & ORM",
+      items: ["Node.js", "Express.js", "Django", "REST APIs", "Prisma ORM"],
+    },
+    {
+      title: "Authentication",
+      items: ["JWT", "OAuth 2.0", "Clerk"],
+    },
+    {
+      title: "Databases & Storage",
+      items: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Firebase", "Supabase"],
+    },
+    {
+      title: "Cloud & DevOps",
+      items: ["AWS (S3, Lambda)", "Docker", "Cloudinary", "Vercel", "Netlify"],
+    },
+    {
+      title: "Tools & AI-Assisted Development",
+      items: ["Postman", "Git", "GitHub", "Cursor", "VS Code", "Slack", "Bitbucket", "JIRA"],
+    },
+    {
+      title: "Competencies",
+      items: [
+        "Data Structures & Algorithms (DSA)",
+        "System Design",
+        "Agile",
+        "Responsive Design",
+      ],
+    },
+  ];
   
   const expCards = [
     {
@@ -286,6 +334,7 @@ const navLinks = [
     testimonials,
     socialImgs,
     techStackIcons,
+    techStackSkills,
     techStackImgs,
     navLinks,
   };
