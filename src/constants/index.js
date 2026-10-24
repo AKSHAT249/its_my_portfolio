@@ -148,43 +148,49 @@ const navLinks = [
   const expCards = [
     {
       review:
-        "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-      imgPath: "/images/MorphemeWebnexus.png",
-      logoPath: "/images/logo1.png",
+        "Akshat brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      imgPath: "https://webnexus.in/webnexus-logo.png",
+      logoPath: "/images/logo5.jpg",
       title: "Software Engineer",
       date: "May 2025 - Present",
       responsibilities: [
-        "Developed and maintained user-facing features for the Hostinger website.",
+        `Led the migration of a legacy React application from Material UI v3 to v7, upgrading 100+ UI components across three
+          framework versions with zero functional regressions, completing the migration in 2 days using Cursor.`,
+        `Root-caused and resolved a critical rendering issue affecting legacy iOS 14 devices, where modals collapsed and layouts broke
+          for production users; engineered a device-detection solution to apply targeted CSS fixes without modifying the core codebase,
+          restoring a consistent user experience.`,
         "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
         "Optimized web applications for maximum speed and scalability.",
       ],
     },
     {
       review:
-        "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-      imgPath: "/images/exp2.png",
-      logoPath: "/images/logo2.png",
-      title: "Full Stack Developer",
-      date: "June 2020 - December 2023",
+        "Akshat's contributions to web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      imgPath: "https://shastriya.com/logo.png",
+      logoPath: "/images/logo6.png",
+      title: "Associate Software Engineer",
+      date: "Jan 2024 - Feb 2025 (1 Year 2 Months)",
       responsibilities: [
-        "Led the development of Docker's web applications, focusing on scalability.",
+        `Developed a full-stack Academic ERP platform from scratch, delivering 100+ reusable React/Next.js components across
+         Student, Teacher, Admin, Attendance, Fee Management, and Transportation modules.`,
+        `Engineered 50+ RESTful APIs using Django REST Framework, PostgreSQL, Django ORM, and JWT Authentication to
+         support student lifecycle management, attendance, meetings, fee collection, and administrative workflows.`,
         "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-        "Contributed to open-source projects that were used with the Docker ecosystem.",
       ],
     },
-    {
-      review:
-        "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-      imgPath: "/images/exp3.png",
-      logoPath: "/images/logo3.png",
-      title: "React Native Developer",
-      date: "March 2019 - May 2020",
-      responsibilities: [
-        "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-        "Improved app performance and user experience through code optimization and testing.",
-        "Coordinated with the product team to implement features based on feedback.",
-      ],
-    },
+    // {
+    //   review:
+    //     "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    //   imgPath: "/images/exp3.png",
+    //   logoPath: "/images/logo3.png",
+    //   title: "React Native Developer",
+    //   date: "March 2019 - May 2020",
+    //   responsibilities: [
+    //     "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
+    //     "Improved app performance and user experience through code optimization and testing.",
+    //     "Coordinated with the product team to implement features based on feedback.",
+    //   ],
+    // },
   ];
   
   const expLogos = [
