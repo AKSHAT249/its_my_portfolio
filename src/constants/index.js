@@ -89,106 +89,85 @@ const navLinks = [
     },
   ];
   
-  const techStackImgs = [
-    {
-      name: "React Developer",
-      imgPath: "/images/logos/react.png",
-    },
-    {
-      name: "Python Developer",
-      imgPath: "/images/logos/python.svg",
-    },
-    {
-      name: "Backend Developer",
-      imgPath: "/images/logos/node.png",
-    },
-    {
-      name: "Interactive Developer",
-      imgPath: "/images/logos/three.png",
-    },
-    {
-      name: "Project Manager",
-      imgPath: "/images/logos/git.svg",
-    },
-  ];
-  
-  const techStackIcons = [
-    {
-      name: "React Developer",
-      modelPath: "/models/react_logo-transformed.glb",
-      scale: 1,
-      rotation: [0, 0, 0],
-    },
-    {
-      name: "Python Developer",
-      modelPath: "/models/python-transformed.glb",
-      scale: 0.8,
-      rotation: [0, 0, 0],
-    },
-    {
-      name: "Backend Developer",
-      modelPath: "/models/node-transformed.glb",
-      scale: 5,
-      rotation: [0, -Math.PI / 2, 0],
-    },
-    {
-      name: "Interactive Developer",
-      modelPath: "/models/three.js-transformed.glb",
-      scale: 0.05,
-      rotation: [0, 0, 0],
-    },
-    {
-      name: "Project Manager",
-      modelPath: "/models/git-svg-transformed.glb",
-      scale: 0.05,
-      rotation: [0, -Math.PI / 4, 0],
-    },
-  ];
-
+  // Bento-tuned groups: 6 / 6 / 4 / 3 / 6 / 12 → 3+3 row layout (last card wide)
   const techStackSkills = [
     {
       title: "Languages",
-      items: ["JavaScript (ES6+)", "Python", "TypeScript", "SQL", "HTML5", "CSS3"],
-    },
-    {
-      title: "Frontend",
+      icon: "code",
+      span: "normal",
       items: [
-        "React.js",
-        "Next.js",
-        "Redux Toolkit",
-        "Material-UI (MUI)",
-        "Ant Design",
-        "Recharts",
-        "Cross-Platform Optimization (Web / iPad)",
+        { name: "JavaScript", slug: "javascript", color: "F7DF1E", core: true },
+        { name: "TypeScript", slug: "typescript", color: "3178C6", core: true },
+        { name: "Python", slug: "python", color: "3776AB", core: false },
+        { name: "SQL", slug: "mysql", color: "4479A1", core: false },
+        { name: "HTML5", slug: "html5", color: "E34F26", core: false },
+        { name: "CSS3", slug: "css", color: "663399", core: false },
       ],
     },
     {
-      title: "Backend & ORM",
-      items: ["Node.js", "Express.js", "Django", "REST APIs", "Prisma ORM"],
-    },
-    {
-      title: "Authentication",
-      items: ["JWT", "OAuth 2.0", "Clerk"],
-    },
-    {
-      title: "Databases & Storage",
-      items: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Firebase", "Supabase"],
-    },
-    {
-      title: "Cloud & DevOps",
-      items: ["AWS (S3, Lambda)", "Docker", "Cloudinary", "Vercel", "Netlify"],
-    },
-    {
-      title: "Tools & AI-Assisted Development",
-      items: ["Postman", "Git", "GitHub", "Cursor", "VS Code", "Slack", "Bitbucket", "JIRA"],
-    },
-    {
-      title: "Competencies",
+      title: "Frontend",
+      icon: "monitor",
+      span: "normal",
       items: [
-        "Data Structures & Algorithms (DSA)",
-        "System Design",
-        "Agile",
-        "Responsive Design",
+        { name: "React", slug: "react", color: "61DAFB", core: true },
+        { name: "Next.js", slug: "nextdotjs", color: "FFFFFF", core: false },
+        { name: "Redux Toolkit", slug: "redux", color: "764ABC", core: false },
+        { name: "Material UI", slug: "mui", color: "007FFF", core: false },
+        { name: "Ant Design", slug: "antdesign", color: "0170FE", core: false },
+        { name: "Recharts", slug: "chartdotjs", color: "FF6384", core: false },
+      ],
+    },
+    {
+      title: "Backend & APIs",
+      icon: "server",
+      span: "normal",
+      items: [
+        { name: "Node.js", slug: "nodedotjs", color: "339933", core: true },
+        { name: "Express.js", slug: "express", color: "FFFFFF", core: false },
+        { name: "Django", slug: "django", color: "092E20", core: false },
+        { name: "REST APIs", slug: "fastapi", color: "009688", core: false },
+      ],
+    },
+    {
+      title: "Auth & Security",
+      icon: "shield",
+      span: "narrow",
+      items: [
+        { name: "JWT", slug: "jsonwebtokens", color: "FFFFFF", core: false },
+        { name: "OAuth 2.0", slug: "auth0", color: "EB5424", core: false },
+        { name: "Clerk", slug: "clerk", color: "6C47FF", core: false },
+      ],
+    },
+    {
+      title: "Database & Storage",
+      icon: "database",
+      span: "narrow",
+      items: [
+        { name: "PostgreSQL", slug: "postgresql", color: "4169E1", core: true },
+        { name: "MongoDB", slug: "mongodb", color: "47A248", core: false },
+        { name: "MySQL", slug: "mysql", color: "4479A1", core: false },
+        { name: "Redis", slug: "redis", color: "FF4438", core: false },
+        { name: "Firebase", slug: "firebase", color: "DD2C00", core: false },
+        { name: "Supabase", slug: "supabase", color: "3FCF8E", core: false },
+      ],
+    },
+    {
+      title: "Cloud, DevOps & Tools",
+      icon: "cloud",
+      span: "wide",
+      items: [
+        { name: "AWS", slug: "amazonaws", color: "FF9900", core: false },
+        { name: "Docker", slug: "docker", color: "2496ED", core: false },
+        { name: "Cloudinary", slug: "cloudinary", color: "3448C5", core: false },
+        { name: "Vercel", slug: "vercel", color: "FFFFFF", core: false },
+        { name: "Netlify", slug: "netlify", color: "00C7B7", core: false },
+        { name: "Git", slug: "git", color: "F05032", core: false },
+        { name: "GitHub", slug: "github", color: "FFFFFF", core: false },
+        { name: "Postman", slug: "postman", color: "FF6C37", core: false },
+        { name: "Cursor", slug: "cursor", color: "FFFFFF", core: false },
+        // { name: "VS Code", slug: "visualstudiocode", color: "007ACC", core: fal  
+        { name: "Bitbucket", slug: "bitbucket", color: "0052CC", core: false },
+        { name: "Jira", slug: "jira", color: "0052CC", core: false },
       ],
     },
   ];
@@ -304,7 +283,7 @@ const navLinks = [
   const socialImgs = [
     {
       name: "insta",
-      url: "https://www.instagram.com/",
+      url: "https://www.instagram.com/as_its_aksh/",
       imgPath: "/images/insta.png",
     },
     {
@@ -312,15 +291,20 @@ const navLinks = [
       url: "https://www.facebook.com/",
       imgPath: "/images/fb.png",
     },
-    {
-      name: "x",
-      url: "https://www.x.com/",
-      imgPath: "/images/x.png",
-    },
+    // {
+    //   name: "x",
+    //   url: "https://www.x.com/",
+    //   imgPath: "/images/x.png",
+    // },
     {
       name: "linkedin",
-      url: "https://www.linkedin.com/",
+      url: "https://www.linkedin.com/in/its-akshat-saxena/",
       imgPath: "/images/linkedin.png",
+    },
+    {
+      name: "github",
+      url: "https://github.com/AKSHAT249",
+      imgPath: "/images/github.png",
     },
   ];
   
@@ -333,8 +317,6 @@ const navLinks = [
     expLogos,
     testimonials,
     socialImgs,
-    techStackIcons,
     techStackSkills,
-    techStackImgs,
     navLinks,
   };

@@ -8,10 +8,17 @@ const Footer = () => {
           <p>Terms & Conditions</p>
         </div>
         <div className="socials">
-          {socialImgs.map((socialImg, index) => (
-            <div key={index} className="icon">
-              <img src={socialImg.imgPath} alt="social icon" />
-            </div>
+          {socialImgs.map((socialImg) => (
+            <a
+              key={socialImg.name}
+              href={socialImg.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`icon ${socialImg.name === "github" ? "github-icon" : ""}`}
+              aria-label={socialImg.name}
+            >
+              <img src={socialImg.imgPath} alt="" />
+            </a>
           ))}
         </div>
         <div className="flex flex-col justify-center">
