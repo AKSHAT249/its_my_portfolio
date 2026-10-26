@@ -35,42 +35,6 @@ const navLinks = [
     { value: 5, suffix: "yrs", label: "Competetive Programming" },
   ];
   
-  const logoIconsList = [
-    {
-      imgPath: "/images/logos/company-logo-1.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-2.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-3.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-4.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-5.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-6.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-7.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-8.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-9.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-10.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-11.png",
-    },
-  ];
-  
   const abilities = [
     {
       imgPath: "/images/seo.png",
@@ -165,7 +129,6 @@ const navLinks = [
         { name: "GitHub", slug: "github", color: "FFFFFF", core: false },
         { name: "Postman", slug: "postman", color: "FF6C37", core: false },
         { name: "Cursor", slug: "cursor", color: "FFFFFF", core: false },
-        // { name: "VS Code", slug: "visualstudiocode", color: "007ACC", core: fal  
         { name: "Bitbucket", slug: "bitbucket", color: "0052CC", core: false },
         { name: "Jira", slug: "jira", color: "0052CC", core: false },
       ],
@@ -311,7 +274,6 @@ const navLinks = [
   export {
     words,
     abilities,
-    logoIconsList,
     counterItems,
     expCards,
     expLogos,
